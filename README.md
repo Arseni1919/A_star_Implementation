@@ -7,7 +7,7 @@ You can redefine any part of the code for your own purposes.
 
 ### Nodes
 
-Class of Nodes is defined as follows:
+Class `Node` is defined as follows:
 
 ```python
 class Node:
@@ -24,7 +24,7 @@ class Node:
         return self.g + self.h
 ```
 
-Each Node has to have:
+Each node has to have:
 
 - position (x and y)
 - unique ID (`int`)
@@ -36,15 +36,27 @@ Each Node has to have:
 ```python
 from a_star import Node, a_star
 ```
-2. Create Nodes.
-3. Put all created Nodes inside a list.
-4. Pick one node as a `start_node` and one node as `goal_node`.
-5. Then insert all of these inside an `a_star` function as follows:
-
+2. Create nodes and put all created nodes inside a list.
+```python
+nodes = [
+        Node(ID=1, x=1, y=5, neighbours=[3]),
+        Node(ID=2, x=3, y=5, neighbours=[3]),
+        Node(ID=3, x=3, y=4, neighbours=[1, 2, 4, 6]),
+        Node(ID=4, x=1, y=3, neighbours=[3, 5]),
+        Node(ID=5, x=3, y=2, neighbours=[4, 6, 7]),
+        Node(ID=6, x=4, y=3, neighbours=[3, 5]),
+        Node(ID=7, x=2, y=1, neighbours=[5]),
+    ]
+```
+3. Pick one node as a `start_node` and one node as `goal_node`.
+```python
+node_start = nodes[0]
+node_goal = nodes[-1]
+```
+4. Then insert all of these inside an `a_star` function as follows:
 ```python
 result = a_star(start=node_start, goal=node_goal, nodes=nodes)
 ```
-
 The `result` will be *None* if there is no solution.
 Otherwise, the `result` will contain the list of nodes
 representing the path of a solution (from goal to start).
