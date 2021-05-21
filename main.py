@@ -13,7 +13,7 @@ def main():
         Node(ID=7, x=2, y=1, neighbours=[5]),
     ]
     node_start = nodes[0]
-    node_goal = nodes[-3]
+    node_goal = nodes[-1]
 
     result = a_star(start=node_start, goal=node_goal, nodes=nodes)
 
