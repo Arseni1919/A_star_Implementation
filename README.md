@@ -32,7 +32,7 @@ Each node has to have:
 
 ### Process
 
-1. Import `Node` class and `a_star` function.
+1. Import `Node` class and `a_star` function from `a_star.py` module.
 ```python
 from a_star import Node, a_star
 ```
