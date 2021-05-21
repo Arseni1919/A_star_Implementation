@@ -62,6 +62,7 @@ Otherwise, the `result` will contain the list of nodes
 representing the path of a solution (from goal to start).
 
 Example of a result plot:
+
 ![plot](static/plot.png)
 
 ## A* Algorithm
