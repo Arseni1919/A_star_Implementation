@@ -59,7 +59,7 @@ result = a_star(start=node_start, goal=node_goal, nodes=nodes)
 ```
 The `result` will be *None* if there is no solution.
 Otherwise, the `result` will contain the list of nodes
-representing the path of a solution (from goal to start).
+representing the path of a solution (\*from goal to start\*).
 
 ## A* Algorithm
 
