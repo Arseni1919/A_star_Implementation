@@ -1,6 +1,6 @@
 # Implementation Of A* Algorithm
 
-This is short and simple generic implementation of the A* Algorithm.
+This is **short** and **simple** generic implementation of the [A* Algorithm](https://en.wikipedia.org/wiki/A*_search_algorithm).
 You can redefine any part of the code for your own purposes.
 
 ## How To Use
