@@ -36,10 +36,10 @@ Each Node has to have:
 ```python
 from a_star import Node, a_star
 ```
-1. Create Nodes.
-1. Put all created Nodes inside a list.
-1. Pick one node as a `start_node` and one node as `goal_node`.
-1. Then insert all of these inside an `a_star` function as follows:
+2. Create Nodes.
+3. Put all created Nodes inside a list.
+4. Pick one node as a `start_node` and one node as `goal_node`.
+5. Then insert all of these inside an `a_star` function as follows:
 
 ```python
 result = a_star(start=node_start, goal=node_goal, nodes=nodes)
