@@ -70,4 +70,5 @@ def way(node_current, node_successor):
 ## Credits
 
 - [pseudocode](https://mat.uab.cat/~alseda/MasterOpt/AStar-Algorithm.pdf)
+- [*zephirdeadline* implementation of A*](https://github.com/zephirdeadline/astar_python)
 
