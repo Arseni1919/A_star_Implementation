@@ -27,8 +27,8 @@ class Node:
 Each Node has to have:
 
 - position (x and y)
-- unique ID
-- list of it's neighbours' IDs
+- unique ID (`int`)
+- list of it's neighbours' IDs (list of `int`s)
 
 ### Process
 
@@ -42,8 +42,7 @@ result = a_star(start=node_start, goal=node_goal, nodes=nodes)
 ```
 
 The `result` will be *None* if there is no solution.
-If there is solution
-the `result` will contain the list of nodes
+Otherwise, the `result` will contain the list of nodes
 representing the path of a solution (from goal to start).
 
 
