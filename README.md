@@ -53,6 +53,20 @@ The pseudocode:
 
 ![A star](static/a_star_pseudocode.png)
 
+### Example Of Heuristic Function
+
+```python
+def heuristic(from_node, to_node):
+    return np.sqrt((from_node.x - to_node.x) ** 2 + (from_node.y - to_node.y) ** 2)
+```
+
+### Example Of `w` Function
+
+```python
+def way(node_current, node_successor):
+    return heuristic(node_current, node_successor)
+```
+
 ## Credits
 
 - [pseudocode](https://mat.uab.cat/~alseda/MasterOpt/AStar-Algorithm.pdf)
